@@ -11,6 +11,7 @@ onButtonPress() {
 }
 
   render() {
+    console.log(this.props.employee);
     return (
       <Card>
         <CardSection>
