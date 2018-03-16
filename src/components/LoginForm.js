@@ -51,6 +51,7 @@ renderError() {
             placeholder="email@gmail.com"
             onChangeText={this.onEmailChange.bind(this)}
             value={this.props.email}
+            autoCapitalize='none'
           />
         </CardSection>
 
@@ -60,6 +61,9 @@ renderError() {
             placeholder="password"
             onChangeText={this.onPasswordChange.bind(this)}
             value={this.props.password}
+            autoCapitalize='none'
+            autoCorrect={false}
+            secureTextEntry
           />
         </CardSection>
 
